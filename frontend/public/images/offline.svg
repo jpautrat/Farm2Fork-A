@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Offline</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(10.000000, 10.000000)">
+            <circle fill="#F3F4F6" cx="90" cy="90" r="90"></circle>
+            <g transform="translate(30.000000, 30.000000)" fill-rule="nonzero">
+                <path d="M60,0 C26.863,0 0,26.863 0,60 C0,93.137 26.863,120 60,120 C93.137,120 120,93.137 120,60 C120,26.863 93.137,0 60,0 Z" fill="#4F7942" opacity="0.2"></path>
+                <path d="M60,12 C33.49,12 12,33.49 12,60 C12,86.51 33.49,108 60,108 C86.51,108 108,86.51 108,60 C108,33.49 86.51,12 60,12 Z M60,96 C40.118,96 24,79.882 24,60 C24,40.118 40.118,24 60,24 C79.882,24 96,40.118 96,60 C96,79.882 79.882,96 60,96 Z" fill="#4F7942"></path>
+                <path d="M84,60 C84,73.255 73.255,84 60,84 C46.745,84 36,73.255 36,60 C36,46.745 46.745,36 60,36 C73.255,36 84,46.745 84,60 Z" fill="#4F7942" opacity="0.4"></path>
+                <path d="M102,18 L18,102" stroke="#FF5252" stroke-width="6" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
