@@ -1,0 +1,49 @@
+services:
+  - type: web
+    name: farm2fork-api
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 8080
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: EASYPOST_API_KEY
+        sync: false
+      - key: LOG_LEVEL
+        value: info
+      - key: RATE_LIMIT_DEFAULT
+        value: 100
+      - key: RATE_LIMIT_STRICT
+        value: 20
+      - key: RATE_LIMIT_RELAXED
+        value: 300
+      - key: RATE_LIMIT_WHITELIST
+        sync: false
+      - key: REDIS_URL
+        sync: false
+      - key: CACHE_STORE
+        value: redis
+      - key: API_KEY_RATE_LIMIT_BASIC
+        value: 100
+      - key: API_KEY_RATE_LIMIT_PREMIUM
+        value: 300
+      - key: API_KEY_RATE_LIMIT_ENTERPRISE
+        value: 1000
+      - key: API_KEY_WHITELIST
+        sync: false
+      - key: TRUSTED_PROXIES
+        sync: false
