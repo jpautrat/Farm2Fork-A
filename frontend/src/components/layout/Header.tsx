@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useSupabaseClient, useUser } from '@supabase/auth-helpers-react';
 import { FaShoppingCart, FaUser, FaSignOutAlt, FaBars, FaTimes } from 'react-icons/fa';
 import NotificationDropdown from '@/components/notifications/NotificationDropdown';
+import LanguageSwitcher from '@/components/ui/LanguageSwitcher';
 import { useCartStore } from '@/store/cartStore';
 
 export default function Header() {
@@ -55,6 +56,8 @@ export default function Header() {
 
           {/* Desktop User Actions */}
           <div className="hidden md:flex items-center space-x-4">
+            <LanguageSwitcher />
+            
             <Link
               href="/cart"
               className="relative text-gray-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 rounded p-1"
@@ -184,6 +187,9 @@ export default function Header() {
                 About
               </Link>
             </nav>
+            <div className="flex items-center space-x-4 mb-4">
+              <LanguageSwitcher />
+            </div>
             <div className="flex items-center space-x-4">
               <Link
                 href="/cart"

@@ -1,0 +1,284 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Inicio",
+      "shop": "Tienda",
+      "farmers": "Agricultores",
+      "about": "Sobre Nosotros",
+      "contact": "Contacto",
+      "cart": "Carrito",
+      "login": "Iniciar Sesión",
+      "register": "Registrarse",
+      "logout": "Cerrar Sesión",
+      "myAccount": "Mi Cuenta",
+      "dashboard": "Panel de Control"
+    },
+    "footer": {
+      "about": "Acerca de Farm2Fork",
+      "aboutText": "Conectando agricultores locales con consumidores para entrega de alimentos frescos y sostenibles.",
+      "quickLinks": "Enlaces Rápidos",
+      "customerService": "Atención al Cliente",
+      "contact": "Contáctenos",
+      "copyright": "© {{year}} Farm2Fork. Todos los derechos reservados."
+    },
+    "buttons": {
+      "add": "Añadir",
+      "remove": "Eliminar",
+      "update": "Actualizar",
+      "cancel": "Cancelar",
+      "save": "Guardar",
+      "submit": "Enviar",
+      "checkout": "Finalizar Compra",
+      "back": "Volver",
+      "continue": "Continuar",
+      "filter": "Filtrar",
+      "clear": "Limpiar",
+      "search": "Buscar",
+      "apply": "Aplicar",
+      "viewAll": "Ver Todo"
+    },
+    "validation": {
+      "required": "Este campo es obligatorio",
+      "email": "Por favor, ingrese un correo electrónico válido",
+      "minLength": "Debe tener al menos {{length}} caracteres",
+      "maxLength": "No puede exceder {{length}} caracteres",
+      "passwordMatch": "Las contraseñas no coinciden",
+      "invalidCredentials": "Correo electrónico o contraseña inválidos",
+      "invalidInput": "Entrada inválida"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Alimentos Locales Frescos a Domicilio",
+      "subtitle": "Del Campo a la Mesa",
+      "cta": "Empezar a Comprar"
+    },
+    "features": {
+      "fresh": {
+        "title": "Fresco y Local",
+        "description": "Productos de granjas en tu área, entregando los ingredientes más frescos posibles."
+      },
+      "sustainable": {
+        "title": "Sostenible",
+        "description": "Apoyando la agricultura local reduce las millas de transporte y el impacto ambiental."
+      },
+      "community": {
+        "title": "Comunidad",
+        "description": "Conéctate con los agricultores que cultivan tus alimentos y apoya tu economía local."
+      }
+    },
+    "farmersSection": {
+      "title": "Conoce a Nuestros Agricultores",
+      "description": "Conoce a las personas detrás de tus alimentos.",
+      "viewAll": "Ver Todos los Agricultores"
+    },
+    "popularProducts": {
+      "title": "Productos Populares",
+      "viewAll": "Ver Todos los Productos"
+    }
+  },
+  "shop": {
+    "title": "Tienda",
+    "filters": {
+      "title": "Filtros",
+      "categories": "Categorías",
+      "price": "Precio",
+      "organic": "Solo Orgánicos",
+      "farmersMarket": "Mercado de Agricultores",
+      "clearAll": "Limpiar Todo"
+    },
+    "sort": {
+      "title": "Ordenar Por",
+      "newest": "Más Reciente",
+      "priceLowToHigh": "Precio: De Menor a Mayor",
+      "priceHighToLow": "Precio: De Mayor a Menor",
+      "popularity": "Popularidad"
+    },
+    "products": {
+      "outOfStock": "Agotado",
+      "lowStock": "Solo quedan {{count}}",
+      "perUnit": "por {{unit}}",
+      "addToCart": "Añadir al Carrito",
+      "noProducts": "No se encontraron productos"
+    }
+  },
+  "product": {
+    "details": "Detalles del Producto",
+    "description": "Descripción",
+    "from": "De",
+    "organic": "Orgánico",
+    "quantity": "Cantidad",
+    "inStock": "En Stock",
+    "outOfStock": "Agotado",
+    "lowStock": "Solo quedan {{count}}",
+    "addToCart": "Añadir al Carrito",
+    "similarProducts": "Productos Similares"
+  },
+  "cart": {
+    "title": "Carrito de Compras",
+    "empty": "Tu carrito está vacío",
+    "continue": "Continuar Comprando",
+    "items": "Artículos",
+    "subtotal": "Subtotal",
+    "shipping": "Envío",
+    "tax": "Impuestos",
+    "total": "Total",
+    "checkout": "Proceder al Pago",
+    "remove": "Eliminar",
+    "update": "Actualizar Cantidad"
+  },
+  "checkout": {
+    "title": "Finalizar Compra",
+    "summary": "Resumen del Pedido",
+    "shipping": {
+      "title": "Información de Envío",
+      "name": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "address": "Dirección",
+      "city": "Ciudad",
+      "state": "Estado/Provincia",
+      "postalCode": "Código Postal",
+      "country": "País"
+    },
+    "payment": {
+      "title": "Información de Pago",
+      "cardName": "Nombre en la Tarjeta",
+      "cardNumber": "Número de Tarjeta",
+      "expiry": "Fecha de Caducidad",
+      "cvc": "CVC",
+      "billingAddress": "Dirección de Facturación",
+      "sameAsShipping": "Igual que la dirección de envío"
+    },
+    "placeOrder": "Realizar Pedido",
+    "success": {
+      "title": "¡Gracias por tu Pedido!",
+      "orderNumber": "Número de Pedido",
+      "emailConfirmation": "Hemos enviado una confirmación a tu correo electrónico.",
+      "continueShopping": "Continuar Comprando"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Iniciar Sesión",
+      "email": "Correo Electrónico",
+      "password": "Contraseña",
+      "rememberMe": "Recordarme",
+      "forgotPassword": "¿Olvidaste tu Contraseña?",
+      "submit": "Iniciar Sesión",
+      "noAccount": "¿No tienes una cuenta?",
+      "signUp": "Registrarse"
+    },
+    "register": {
+      "title": "Crear Cuenta",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar Contraseña",
+      "asFarmer": "Registrarse como Agricultor",
+      "submit": "Crear Cuenta",
+      "haveAccount": "¿Ya tienes una cuenta?",
+      "login": "Iniciar Sesión"
+    },
+    "forgotPassword": {
+      "title": "Olvidé mi Contraseña",
+      "email": "Correo Electrónico",
+      "submit": "Restablecer Contraseña",
+      "backToLogin": "Volver a Iniciar Sesión",
+      "success": "Revisa tu correo electrónico para las instrucciones de restablecimiento de contraseña."
+    }
+  },
+  "farmer": {
+    "dashboard": {
+      "title": "Panel de Agricultor",
+      "welcome": "Bienvenido, {{name}}",
+      "stats": {
+        "orders": "Pedidos",
+        "products": "Productos",
+        "revenue": "Ingresos",
+        "customers": "Clientes"
+      },
+      "recentOrders": "Pedidos Recientes",
+      "inventory": "Inventario",
+      "viewAll": "Ver Todo"
+    },
+    "products": {
+      "title": "Gestión de Productos",
+      "add": "Añadir Producto",
+      "edit": "Editar Producto",
+      "name": "Nombre",
+      "description": "Descripción",
+      "price": "Precio",
+      "unit": "Unidad",
+      "category": "Categoría",
+      "organic": "Orgánico",
+      "stock": "Cantidad en Stock",
+      "image": "Imagen del Producto",
+      "save": "Guardar Producto",
+      "delete": "Eliminar Producto",
+      "success": "Producto guardado exitosamente",
+      "error": "Error al guardar el producto"
+    },
+    "orders": {
+      "title": "Gestión de Pedidos",
+      "status": "Estado",
+      "customer": "Cliente",
+      "date": "Fecha del Pedido",
+      "total": "Total",
+      "items": "Artículos",
+      "updateStatus": "Actualizar Estado",
+      "viewDetails": "Ver Detalles"
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Panel de Administrador",
+      "stats": {
+        "users": "Usuarios",
+        "orders": "Pedidos",
+        "products": "Productos",
+        "revenue": "Ingresos"
+      },
+      "systemStatus": "Estado del Sistema"
+    },
+    "users": {
+      "title": "Gestión de Usuarios",
+      "add": "Añadir Usuario",
+      "edit": "Editar Usuario",
+      "role": "Rol",
+      "status": "Estado",
+      "lastLogin": "Último Acceso",
+      "actions": "Acciones"
+    },
+    "logs": {
+      "title": "Registros del Sistema",
+      "level": "Nivel",
+      "message": "Mensaje",
+      "timestamp": "Fecha y Hora",
+      "service": "Servicio"
+    }
+  },
+  "profile": {
+    "title": "Mi Perfil",
+    "personalInfo": "Información Personal",
+    "orders": "Mis Pedidos",
+    "addresses": "Mis Direcciones",
+    "paymentMethods": "Métodos de Pago",
+    "preferences": "Preferencias",
+    "changePassword": "Cambiar Contraseña",
+    "deleteAccount": "Eliminar Cuenta"
+  },
+  "offline": {
+    "title": "Estás Sin Conexión",
+    "message": "Por favor, verifica tu conexión a internet e intenta nuevamente.",
+    "retry": "Reintentar"
+  },
+  "error": {
+    "general": "Algo salió mal",
+    "notFound": "Página no encontrada",
+    "serverError": "Error del servidor",
+    "tryAgain": "Intentar Nuevamente",
+    "goBack": "Volver al Inicio"
+  }
+}

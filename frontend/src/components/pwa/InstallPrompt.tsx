@@ -64,7 +64,11 @@ export default function InstallPrompt() {
   }
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white shadow-lg p-4 z-50 border-t border-gray-200">
+    <div 
+      role="alert"
+      aria-live="polite"
+      className="fixed bottom-0 left-0 right-0 bg-white shadow-lg p-4 z-50 border-t border-gray-200"
+    >
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex-1">
           <h3 className="font-semibold text-gray-800">Install Farm2Fork App</h3>
@@ -75,16 +79,17 @@ export default function InstallPrompt() {
         <div className="flex items-center space-x-2">
           <button
             onClick={handleInstall}
-            className="btn-primary py-2 px-4 text-sm flex items-center"
+            className="btn-primary py-2 px-4 text-sm flex items-center focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2"
+            aria-label="Install Farm2Fork App"
           >
-            <FaDownload className="mr-2" /> Install
+            <FaDownload className="mr-2" aria-hidden="true" /> Install
           </button>
           <button
             onClick={handleDismiss}
-            className="p-2 text-gray-500 hover:text-gray-700"
-            aria-label="Dismiss"
+            className="p-2 text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2"
+            aria-label="Dismiss installation prompt"
           >
-            <FaTimes />
+            <FaTimes aria-hidden="true" />
           </button>
         </div>
       </div>

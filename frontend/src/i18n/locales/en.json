@@ -1,0 +1,284 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Home",
+      "shop": "Shop",
+      "farmers": "Farmers",
+      "about": "About Us",
+      "contact": "Contact",
+      "cart": "Cart",
+      "login": "Login",
+      "register": "Register",
+      "logout": "Logout",
+      "myAccount": "My Account",
+      "dashboard": "Dashboard"
+    },
+    "footer": {
+      "about": "About Farm2Fork",
+      "aboutText": "Connecting local farmers with consumers for fresh, sustainable food delivery.",
+      "quickLinks": "Quick Links",
+      "customerService": "Customer Service",
+      "contact": "Contact Us",
+      "copyright": "© {{year}} Farm2Fork. All rights reserved."
+    },
+    "buttons": {
+      "add": "Add",
+      "remove": "Remove",
+      "update": "Update",
+      "cancel": "Cancel",
+      "save": "Save",
+      "submit": "Submit",
+      "checkout": "Checkout",
+      "back": "Back",
+      "continue": "Continue",
+      "filter": "Filter",
+      "clear": "Clear",
+      "search": "Search",
+      "apply": "Apply",
+      "viewAll": "View All"
+    },
+    "validation": {
+      "required": "This field is required",
+      "email": "Please enter a valid email",
+      "minLength": "Must be at least {{length}} characters",
+      "maxLength": "Cannot exceed {{length}} characters",
+      "passwordMatch": "Passwords do not match",
+      "invalidCredentials": "Invalid email or password",
+      "invalidInput": "Invalid input"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Fresh Local Food Delivered",
+      "subtitle": "From Farm to Table",
+      "cta": "Start Shopping"
+    },
+    "features": {
+      "fresh": {
+        "title": "Fresh & Local",
+        "description": "Produce from farms in your area, delivering the freshest ingredients possible."
+      },
+      "sustainable": {
+        "title": "Sustainable",
+        "description": "Supporting local agriculture reduces food miles and environmental impact."
+      },
+      "community": {
+        "title": "Community",
+        "description": "Connect with the farmers who grow your food and support your local economy."
+      }
+    },
+    "farmersSection": {
+      "title": "Meet Our Farmers",
+      "description": "Get to know the people behind your food.",
+      "viewAll": "View All Farmers"
+    },
+    "popularProducts": {
+      "title": "Popular Products",
+      "viewAll": "View All Products"
+    }
+  },
+  "shop": {
+    "title": "Shop",
+    "filters": {
+      "title": "Filters",
+      "categories": "Categories",
+      "price": "Price",
+      "organic": "Organic Only",
+      "farmersMarket": "Farmers Market",
+      "clearAll": "Clear All"
+    },
+    "sort": {
+      "title": "Sort By",
+      "newest": "Newest",
+      "priceLowToHigh": "Price: Low to High",
+      "priceHighToLow": "Price: High to Low",
+      "popularity": "Popularity"
+    },
+    "products": {
+      "outOfStock": "Out of Stock",
+      "lowStock": "Only {{count}} left",
+      "perUnit": "per {{unit}}",
+      "addToCart": "Add to Cart",
+      "noProducts": "No products found"
+    }
+  },
+  "product": {
+    "details": "Product Details",
+    "description": "Description",
+    "from": "From",
+    "organic": "Organic",
+    "quantity": "Quantity",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "lowStock": "Only {{count}} left",
+    "addToCart": "Add to Cart",
+    "similarProducts": "Similar Products"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "continue": "Continue Shopping",
+    "items": "Items",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "tax": "Tax",
+    "total": "Total",
+    "checkout": "Proceed to Checkout",
+    "remove": "Remove",
+    "update": "Update Quantity"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "summary": "Order Summary",
+    "shipping": {
+      "title": "Shipping Information",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "city": "City",
+      "state": "State/Province",
+      "postalCode": "Postal Code",
+      "country": "Country"
+    },
+    "payment": {
+      "title": "Payment Information",
+      "cardName": "Name on Card",
+      "cardNumber": "Card Number",
+      "expiry": "Expiry Date",
+      "cvc": "CVC",
+      "billingAddress": "Billing Address",
+      "sameAsShipping": "Same as shipping address"
+    },
+    "placeOrder": "Place Order",
+    "success": {
+      "title": "Thank You for Your Order!",
+      "orderNumber": "Order Number",
+      "emailConfirmation": "We've sent a confirmation to your email.",
+      "continueShopping": "Continue Shopping"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "rememberMe": "Remember Me",
+      "forgotPassword": "Forgot Password?",
+      "submit": "Login",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign Up"
+    },
+    "register": {
+      "title": "Create Account",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "asFarmer": "Register as Farmer",
+      "submit": "Create Account",
+      "haveAccount": "Already have an account?",
+      "login": "Login"
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "email": "Email",
+      "submit": "Reset Password",
+      "backToLogin": "Back to Login",
+      "success": "Check your email for password reset instructions."
+    }
+  },
+  "farmer": {
+    "dashboard": {
+      "title": "Farmer Dashboard",
+      "welcome": "Welcome, {{name}}",
+      "stats": {
+        "orders": "Orders",
+        "products": "Products",
+        "revenue": "Revenue",
+        "customers": "Customers"
+      },
+      "recentOrders": "Recent Orders",
+      "inventory": "Inventory",
+      "viewAll": "View All"
+    },
+    "products": {
+      "title": "Product Management",
+      "add": "Add Product",
+      "edit": "Edit Product",
+      "name": "Name",
+      "description": "Description",
+      "price": "Price",
+      "unit": "Unit",
+      "category": "Category",
+      "organic": "Organic",
+      "stock": "Stock Quantity",
+      "image": "Product Image",
+      "save": "Save Product",
+      "delete": "Delete Product",
+      "success": "Product saved successfully",
+      "error": "Error saving product"
+    },
+    "orders": {
+      "title": "Orders Management",
+      "status": "Status",
+      "customer": "Customer",
+      "date": "Order Date",
+      "total": "Total",
+      "items": "Items",
+      "updateStatus": "Update Status",
+      "viewDetails": "View Details"
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "stats": {
+        "users": "Users",
+        "orders": "Orders",
+        "products": "Products",
+        "revenue": "Revenue"
+      },
+      "systemStatus": "System Status"
+    },
+    "users": {
+      "title": "User Management",
+      "add": "Add User",
+      "edit": "Edit User",
+      "role": "Role",
+      "status": "Status",
+      "lastLogin": "Last Login",
+      "actions": "Actions"
+    },
+    "logs": {
+      "title": "System Logs",
+      "level": "Level",
+      "message": "Message",
+      "timestamp": "Timestamp",
+      "service": "Service"
+    }
+  },
+  "profile": {
+    "title": "My Profile",
+    "personalInfo": "Personal Information",
+    "orders": "My Orders",
+    "addresses": "My Addresses",
+    "paymentMethods": "Payment Methods",
+    "preferences": "Preferences",
+    "changePassword": "Change Password",
+    "deleteAccount": "Delete Account"
+  },
+  "offline": {
+    "title": "You're Offline",
+    "message": "Please check your internet connection and try again.",
+    "retry": "Retry"
+  },
+  "error": {
+    "general": "Something went wrong",
+    "notFound": "Page not found",
+    "serverError": "Server error",
+    "tryAgain": "Try Again",
+    "goBack": "Go Back to Home"
+  }
+}
