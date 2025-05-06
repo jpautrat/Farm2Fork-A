@@ -6,14 +6,21 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# API proxy redirect
 [[redirects]]
   from = "/api/*"
   to = "https://farm2fork-api.onrender.com/api/:splat"
   status = 200
   force = true
 
+# Handle Next.js routing - this is the critical part for preventing 404s
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/next_server/:splat"
+  to = "/index.html"
   status = 200
-  force = true
+
+# Next.js asset handling
+[[headers]]
+  for = "/_next/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
