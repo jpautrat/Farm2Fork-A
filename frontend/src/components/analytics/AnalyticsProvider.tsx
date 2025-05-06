@@ -2,7 +2,7 @@
 
 import { usePathname, useSearchParams } from 'next/navigation';
 import Script from 'next/script';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { GA_MEASUREMENT_ID, pageview } from '@/utils/analytics/gtag';
 
 export default function AnalyticsProvider({
@@ -12,14 +12,26 @@ export default function AnalyticsProvider({
 }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+    
     if (pathname) {
       // Track page views whenever the route changes
       const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : '');
       pageview(url);
     }
-  }, [pathname, searchParams]);
+  }, [pathname, searchParams, isMounted]);
+
+  // Only render Google Analytics script on client-side
+  if (typeof window === 'undefined') {
+    return <>{children}</>;
+  }
 
   return (
     <>

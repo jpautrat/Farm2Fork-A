@@ -1,7 +1,7 @@
 'use client';
 
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import { createClient } from '@supabase/supabase-js';
 import { SessionContextProvider } from '@supabase/auth-helpers-react';
 import { useState, useEffect } from 'react';
 import { NotificationProvider } from '@/contexts/NotificationContext';
@@ -27,7 +27,11 @@ const defaultQueryClientOptions = {
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const [queryClient] = useState(() => new QueryClient(defaultQueryClientOptions));
-  const [supabaseClient] = useState(() => createClientComponentClient());
+  // Use standard supabase-js client instead of Next.js specific client
+  const [supabaseClient] = useState(() => createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL || '',
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
+  ));
 
   // Handle global errors
   const handleError = (error: Error, errorInfo: ErrorInfo) => {

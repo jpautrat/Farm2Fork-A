@@ -6,6 +6,7 @@ import Footer from '@/components/layout/Footer';
 import { Toaster } from 'react-hot-toast';
 import PWARegister from './pwa-register';
 import AnalyticsProvider from '@/components/analytics/AnalyticsProvider';
+import ClientOnly from '@/components/ui/ClientOnly';
 
 // Font configuration
 const inter = Inter({
@@ -45,15 +46,17 @@ export default function RootLayout({
         <a href="#main-content" className="sr-only focus:not-sr-only p-2 bg-primary-600 text-white z-50 fixed top-2 left-2 rounded">
           Skip to main content
         </a>
-        <AnalyticsProvider>
-          <Providers>
-            <Header />
-            <main id="main-content" className="flex-grow">{children}</main>
-            <Footer />
-            <Toaster position="top-right" />
-            <PWARegister />
-          </Providers>
-        </AnalyticsProvider>
+        <ClientOnly>
+          <AnalyticsProvider>
+            <Providers>
+              <Header />
+              <main id="main-content" className="flex-grow">{children}</main>
+              <Footer />
+              <Toaster position="top-right" />
+              <PWARegister />
+            </Providers>
+          </AnalyticsProvider>
+        </ClientOnly>
       </body>
     </html>
   );
