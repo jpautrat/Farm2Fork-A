@@ -1,3 +1,10 @@
+// Extend Navigator interface to include the standalone property for iOS Safari
+declare global {
+  interface Navigator {
+    standalone?: boolean;
+  }
+}
+
 /**
  * Register service worker for PWA functionality
  */
@@ -58,5 +65,5 @@ export function isAppInstallable(): boolean {
 export function isAppInstalled(): boolean {
   if (typeof window === 'undefined') return false;
   return window.matchMedia('(display-mode: standalone)').matches || 
-         window.navigator.standalone === true;
+         (navigator && navigator.standalone === true);
 }
