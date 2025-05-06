@@ -1,6 +1,17 @@
 // Google Analytics measurement ID (replace with actual ID in production)
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX';
 
+// Declare gtag as a property on the window object for TypeScript
+declare global {
+  interface Window {
+    gtag: (
+      command: 'config' | 'event' | 'set', 
+      targetId: string, 
+      config?: Record<string, any> | undefined
+    ) => void;
+  }
+}
+
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url: string) => {
   if (typeof window !== 'undefined' && window.gtag) {
