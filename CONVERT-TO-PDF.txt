@@ -1,0 +1,47 @@
+# Converting _prompts.md to PDF
+
+To convert the _prompts.md file to PDF as required for the project submission, you can use one of the following methods:
+
+## Method 1: Using Online Markdown to PDF Converters
+
+1. Open a web browser and go to one of these online converters:
+   - https://www.markdowntopdf.com/
+   - https://md2pdf.netlify.app/
+   - https://dillinger.io/ (Export as PDF)
+
+2. Open the _prompts.md file in a text editor
+3. Copy all the content
+4. Paste it into the online converter
+5. Download the PDF file
+6. Save it as _prompts.pdf in the project root directory
+
+## Method 2: Using Visual Studio Code with Extensions
+
+1. Open _prompts.md in Visual Studio Code
+2. Install the "Markdown PDF" extension by yzane
+   - Go to Extensions (Ctrl+Shift+X)
+   - Search for "Markdown PDF"
+   - Install the extension by yzane
+
+3. Right-click in the markdown file
+4. Select "Markdown PDF: Export (pdf)"
+5. The PDF will be generated in the same directory
+6. Rename it to _prompts.pdf if necessary
+
+## Method 3: Using Pandoc (Command Line)
+
+If you have Pandoc installed:
+
+```bash
+pandoc _prompts.md -o _prompts.pdf
+```
+
+## Method 4: Using a Word Processor
+
+1. Open _prompts.md in a text editor
+2. Copy all the content
+3. Paste it into Microsoft Word, Google Docs, or LibreOffice Writer
+4. Save/Export as PDF
+5. Name the file _prompts.pdf
+
+Choose the method that works best for you based on the tools you have available.
