@@ -9,18 +9,7 @@ const nextConfig = {
   output: 'export',
   // Disable server-side features that are incompatible with static export
   distDir: 'out',
-  // Keep the rewrites for development but not for production static export
-  async rewrites() {
-    if (process.env.NODE_ENV !== 'production') {
-      return [
-        {
-          source: '/api/:path*',
-          destination: process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/:path*` : 'https://farm2fork-api.onrender.com/api/:path*',
-        },
-      ];
-    }
-    return [];
-  },
+  // Removed rewrites as they're incompatible with static export mode
 };
 
 module.exports = nextConfig;
